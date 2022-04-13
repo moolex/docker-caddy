@@ -4,4 +4,18 @@
 
 * [Cloudflare DNS module](https://github.com/caddy-dns/cloudflare)
 
-Also a few custom environment variables.
+## example
+
+```
+  caddy:
+    image: ghcr.io/xnaas/caddy:stable
+    container_name: caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./caddy/data:/data
+      - ./caddy/config:/config
+```
