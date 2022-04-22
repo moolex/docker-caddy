@@ -8,7 +8,7 @@
 
 ```
   caddy:
-    image: ghcr.io/xnaas/caddy:stable
+    image: ghcr.io/moolex/caddy:stable
     container_name: caddy
     restart: unless-stopped
     ports:
