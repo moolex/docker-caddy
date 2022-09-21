@@ -13,7 +13,7 @@ RUN go get github.com/caddyserver/caddy/v2@$CADDY_VERSION
 RUN go mod tidy
 RUN CGO_ENABLED=0 go build
 # https://w.wiki/JQC
-RUN wget https://raw.githubusercontent.com/xnaas/webserver/master/caddy/mime.types
+RUN wget https://raw.githubusercontent.com/moolex/docker-caddy/main/mime.types
 # required for 'netgo'
 RUN /bin/echo 'hosts: files dns' > nsswitch.conf
 
