@@ -1,6 +1,6 @@
 ###########
 # builder #
-FROM golang:1.20-alpine AS src
+FROM golang:1.21-alpine AS src
 ARG CADDY_VERSION
 
 RUN apk --no-cache add wget ca-certificates
